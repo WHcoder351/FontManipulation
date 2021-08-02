@@ -1,3 +1,5 @@
+LWx =0;
+RWx =0;
 function preload() {
     
 }
@@ -15,12 +17,18 @@ function setup() {
 function mL() {
     console.log("PoseNet is Initialized");
 }
-function draw() {
-    
-}
-
 function gP(results) {
     if (results.length>0) {
         console.log(results);
+
+        LWx = results[0].pose.leftWrist.x;
+        RWx = results[0].pose.rightWrist.x;
+        difference = floor(LWx - RWx);
     }
+}
+
+function draw() {
+    textSize(difference);
+    fill("#1c03fc");
+    text('Jason S. R.', 125, 200)
 }

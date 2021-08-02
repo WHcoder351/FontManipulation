@@ -14,16 +14,10 @@ position: fixed;
     width: 100%;
 }
 .note{
-    color: maroon;
+    color: rgb(0, 0, 0);
     font-size: 15px;
 }
-.drawing{
-    background-color: rgb(1, 5, 253);
-    border: 5px solid rgb(0, 225, 255);
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 2.5px;
-}
+
 canvas{
     border: 6px dashed darkblue;
     background-color: darkcyan;
