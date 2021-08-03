@@ -29,7 +29,8 @@ function gP(results) {
 }
 
 function draw() {
+    document.getElementById("px").innerHTML = "Font size is " +difference+ "px";
     textSize(difference);
     fill("#1c03fc");
-    text('Jason S. R.', 125, 200)
+    text('Jason S. R.', 125, 200);
 }
