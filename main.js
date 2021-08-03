@@ -1,3 +1,4 @@
+difference = 0;
 LWx =0;
 RWx =0;
 function preload() {
